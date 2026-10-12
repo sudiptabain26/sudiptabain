@@ -1,0 +1,9 @@
+[
+  {
+    "sentence": "[PLACEHOLDER] Replace with the Bangla sentence or its transcript",
+    "note": "[PLACEHOLDER] e.g. Korean to Bangla, angry tone",
+    "original": "assets/audio/demo1_original.wav",
+    "baseline": "assets/audio/demo1_baseline.wav",
+    "ours": "assets/audio/demo1_ours.wav"
+  }
+]

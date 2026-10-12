@@ -1,0 +1,9 @@
+[
+  {
+    "title": "Pratidhwoni (প্রতিধ্বনি)",
+    "description": "An emotion-preserving, prosody-faithful speech-to-speech translation pipeline for dubbing Korean and Japanese content into Bangla.",
+    "status": "In progress",
+    "tags": ["S2ST", "prosody", "Bangla"],
+    "links": { "research plan": "research.html" }
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "motivation": [
+    "Hindi dubs of Korean dramas are produced to a high standard. Comparable Bangla dubbing is largely absent. Pratidhwoni (প্রতিধ্বনি) asks what it would take to close that gap automatically.",
+    "Cascaded speech translation usually passes only text between stages, so the anger, warmth, hesitation and rhythm of the original performance are discarded. I have not found a published pipeline that carries emotional prosody from Korean or Japanese speech into expressive Bangla dubbing, and that is the gap this project targets."
+  ],
+  "pipeline": [
+    { "label": "ASR", "sub": "Speech recognition",
+      "description": "Transcribes the Korean or Japanese source speech into text with word-level timestamps. The timestamps matter later: they record how long each phrase lasted so the Bangla version can be fitted to it. Recognition errors propagate to every later stage." },
+    { "label": "MT", "sub": "Machine translation",
+      "description": "Translates the transcript into Bangla. For dubbing the translation must be speakable and of similar length to the original, not only accurate. Honorifics and register in Korean and Japanese need deliberate handling." },
+    { "label": "Emotion & prosody", "sub": "Expressive features", "focus": true,
+      "description": "Extracts how each line was said from the source audio: emotion, pitch contour, energy, speaking rate and pauses. These signals condition synthesis so the Bangla speech carries a matching performance. This is where text-only cascades lose the most information, and it is the stage I plan to concentrate on." },
+    { "label": "TTS / VC", "sub": "Synthesis and voice conversion",
+      "description": "Generates Bangla speech from the translated text, conditioned on the extracted emotion and prosody. Voice conversion or speaker embeddings can optionally keep the original speaker's voice." },
+    { "label": "Duration alignment", "sub": "Timing",
+      "description": "Fits the Bangla speech to the timing of the original scene so it matches pauses and lip movement, by adjusting speaking rate, pause placement, or the translation itself. Stretching too far hurts naturalness, so this trades off against the stage before it." }
+  ],
+  "questions": [
+    "Which prosodic features (pitch, energy, rate, pauses) carry emotion from Korean or Japanese into Bangla, and which are language-specific?",
+    "Can emotion and prosody taken from source speech condition Bangla TTS without parallel emotional Bangla data?",
+    "How should dubbing duration constraints be balanced against naturalness and emotional fidelity?",
+    "How can emotion preservation be evaluated for Bangla, where few emotion-labelled resources exist?"
+  ],
+  "status": [
+    { "label": "Problem framing and gap analysis", "status": "Done" },
+    { "label": "Pipeline design and dataset schema", "status": "Done" },
+    { "label": "Reading: speech translation, expressive TTS, emotion transfer", "status": "In progress" },
+    { "label": "Cascaded baseline (ASR, MT, TTS)", "status": "Planned" },
+    { "label": "Emotion-conditioned system and listening-test evaluation", "status": "Planned" }
+  ]
+}

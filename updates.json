@@ -1,0 +1,5 @@
+[
+  { "date": "2026-10-12", "title": "Portfolio site set up", "status": "Done", "tags": ["site"] },
+  { "date": "2026-10", "title": "Reading on speech-to-speech translation and expressive TTS", "status": "In progress", "tags": ["S2ST", "prosody"] },
+  { "date": "2026-11", "title": "Build a cascaded ASR-MT-TTS baseline for the demos", "status": "Planned", "tags": ["baseline", "demos"] }
+]

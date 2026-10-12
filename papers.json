@@ -1,0 +1,32 @@
+[
+  {
+    "type": "reading",
+    "title": "Direct speech-to-speech translation with a sequence-to-sequence model",
+    "authors": "Jia et al.",
+    "venue": "Interspeech",
+    "year": 2019,
+    "summary": "Translatotron: an end-to-end model that maps speech in one language directly to speech in another, with no intermediate text step.",
+    "tags": ["S2ST"],
+    "links": { "arXiv": "https://arxiv.org/abs/1904.06037" }
+  },
+  {
+    "type": "reading",
+    "title": "FastSpeech 2: Fast and High-Quality End-to-End Text to Speech",
+    "authors": "Ren et al.",
+    "venue": "ICLR",
+    "year": 2021,
+    "summary": "Non-autoregressive TTS conditioned on explicit pitch, energy and duration predictors; a useful reference for controllable prosody.",
+    "tags": ["prosody", "TTS"],
+    "links": { "arXiv": "https://arxiv.org/abs/2006.04558" }
+  },
+  {
+    "type": "reading",
+    "title": "Seamless: Multilingual Expressive and Streaming Speech Translation",
+    "authors": "Seamless Communication et al.",
+    "venue": "arXiv",
+    "year": 2023,
+    "summary": "Adds expressivity (vocal style and prosody such as rate and pauses) and streaming to multilingual speech translation.",
+    "tags": ["S2ST", "prosody"],
+    "links": { "arXiv": "https://arxiv.org/abs/2312.05187" }
+  }
+]

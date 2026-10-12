@@ -1,0 +1,15 @@
+{
+  "name": "Bain",
+  "intro": [
+    "I'm a recent computer science (CSE) undergraduate working toward graduate research in speech and NLP.",
+    "My project, Pratidhwoni, studies emotion-preserving speech-to-speech translation for dubbing Korean and Japanese content into Bangla.",
+    "I'm interested in how prosody and emotion survive, or get lost, when speech crosses languages."
+  ],
+  "email": "REPLACE-ME@example.com",
+  "cv": "assets/cv.pdf",
+  "links": [
+    { "label": "GitHub", "url": "https://github.com/Sudiptabain75" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/REPLACE-ME" },
+    { "label": "Google Scholar", "url": "" }
+  ]
+}
